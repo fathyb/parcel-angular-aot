@@ -8,7 +8,9 @@
     "removeComments": false,
     "allowUnreachableCode": false,
     "moduleResolution": "node",
-    "outDir": "./build",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": ".",
     "typeRoots": [ "node_modules/@types" ],
     "types": [
        "node",
@@ -25,8 +27,7 @@
     "build",
     "dist",
     "tmp",
-    "node_modules",
-    "main.prod.ts"
+    "node_modules"
   ],
   "compileOnSave": false,
   "buildOnSave": false
