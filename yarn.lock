@@ -3267,9 +3267,9 @@ parcel-bundler@^1.2.0:
     worker-farm "^1.4.1"
     ws "^3.3.2"
 
-parcel-plugin-typescript@0.3.0-angular-aot.5:
-  version "0.3.0-angular-aot.5"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-typescript/-/parcel-plugin-typescript-0.3.0-angular-aot.5.tgz#683526cdca35fc196fac65b7c7cc499f6dbbc794"
+parcel-plugin-typescript@0.2.1-angular-aot.6:
+  version "0.2.1-angular-aot.6"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-typescript/-/parcel-plugin-typescript-0.2.1-angular-aot.6.tgz#325eef338ac66a8a7276422e4996726501e5b959"
   dependencies:
     "@angular/compiler" "^5.1.0"
     "@angular/compiler-cli" "^5.1.0"

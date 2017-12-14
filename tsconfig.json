@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "module": "es2015",
+    "module": "esnext",
     "declaration": true,
     "stripInternal": true,
     "sourceMap": true,
