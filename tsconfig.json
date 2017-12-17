@@ -31,7 +31,7 @@
   },
   "files": [
     "./src/app/app.module.ts",
-    "./src/main.prod.ts",
+    "./src/main.ts",
     "./src/app/shared/components/lazy/lazy.module.ts"
   ],
   "include": [
