@@ -14,7 +14,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/compiler-cli@^5.0.0", "@angular/compiler-cli@^5.1.0":
+"@angular/compiler-cli@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-5.1.1.tgz#579e6846ed493e7202e36eb5cea00cb1a61c927c"
   dependencies:
@@ -23,7 +23,7 @@
     reflect-metadata "^0.1.2"
     tsickle "^0.25.5"
 
-"@angular/compiler@^5.0.0", "@angular/compiler@^5.1.0":
+"@angular/compiler@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.1.1.tgz#7d7953229739e68de74ea821685e1d5569527ef3"
   dependencies:
@@ -3445,12 +3445,10 @@ parcel-bundler@^1.2.0:
     worker-farm "^1.4.1"
     ws "^3.3.2"
 
-parcel-plugin-typescript@0.3.0-angular-aot.8:
-  version "0.3.0-angular-aot.8"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-typescript/-/parcel-plugin-typescript-0.3.0-angular-aot.8.tgz#8f88e82956b4942ff46d59eaf0439ac167426f56"
+parcel-plugin-typescript@0.3.0-angular-aot.9:
+  version "0.3.0-angular-aot.9"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-typescript/-/parcel-plugin-typescript-0.3.0-angular-aot.9.tgz#5d91a458a0e4b32907b285113ac1ec8e71cc1ace"
   dependencies:
-    "@angular/compiler" "^5.1.0"
-    "@angular/compiler-cli" "^5.1.0"
     "@babel/code-frame" "^7.0.0-beta.34"
     chalk "^2.3.0"
     comment-json "^1.1.3"
