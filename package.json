@@ -20,9 +20,9 @@
         "ci:watch": "npm run e2e && npm run test:watch",
         "start": "yarn serve",
         "postinstall": "",
-        "build": "rm -rf dist .cache &&  node_modules/parcel-bundler/bin/cli.js build index.html --public-url / --no-minify && cp -R src/public/assets dist/assets",
+        "build": "rm -rf dist .cache &&  node_modules/parcel-bundler/bin/cli.js build src/index.html --public-url / --no-minify && cp -R src/public/assets dist/assets",
         "copy-assets": "rm -rf dist && mkdir dist && cp -R src/public/assets dist/assets",
-        "serve": "rm -rf .cache && yarn copy-assets && node_modules/parcel-bundler/bin/cli.js index.html --no-hmr"
+        "serve": "rm -rf .cache && yarn copy-assets && node_modules/parcel-bundler/bin/cli.js src/index.html --no-hmr"
     },
     "dependencies": {
         "@angular/animations": "^5.0.0",
