@@ -1,31 +1,30 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './shared/components/home/home.component';
-import { LazyComponent } from './shared/components/lazy/lazy.component';
+
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', loadChildren: './shared/components/home/home.module#HomeModule' },
     { path: 'lazy', loadChildren: './shared/components/lazy/lazy.module#LazyModule' }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
 
-const ctx = window as any
+// const ctx = window as any
 
-ctx.System = {
-  async import() {
-    await import('./shared/components/lazy/lazy.module.ngfactory')
-    const req = ctx['req' + 'u' + 'ire']
+// ctx.System = {
+//   async import() {
+//     await import('./shared/components/lazy/lazy.module.ngfactory')
+//     const req = ctx['req' + 'u' + 'ire']
 
-    const mod = Object
-      .keys(req.cache)
-      .map(key => req.cache[key])
-      .find(mod => {
-        console.log('mode', mod)
+//     const mod = Object
+//       .keys(req.cache)
+//       .map(key => req.cache[key])
+//       .find(mod => {
+//         console.log('mode', mod)
 
-        return mod.exports && mod.exports.LazyModuleNgFactory
-      })
+//         return mod.exports && mod.exports.LazyModuleNgFactory
+//       })
 
-    console.log('factory', mod)
+//     console.log('factory', mod)
 
-    return mod.exports
-  }
-}
+//     return mod.exports
+//   }
+// }

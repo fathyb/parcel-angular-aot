@@ -30,8 +30,9 @@
     "skipMetadataEmit": false
   },
   "files": [
-    "./src/app/app.module.ts",
     "./src/main.prod.ts",
+    "./src/app/app.module.ts",
+    "./src/app/shared/components/home/home.module.ts",
     "./src/app/shared/components/lazy/lazy.module.ts"
   ],
   "include": [

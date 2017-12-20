@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { routing } from './app.routes';
-import { HomeModule } from './shared/components/home/home.module';
+
 
 @NgModule({
 
@@ -13,7 +13,6 @@ import { HomeModule } from './shared/components/home/home.module';
               BrowserAnimationsModule,
               CommonModule,
               HttpClientModule,
-              HomeModule,
               routing],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
