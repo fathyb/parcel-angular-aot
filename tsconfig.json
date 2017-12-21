@@ -29,6 +29,13 @@
     "annotateForClosureCompiler": true,
     "skipMetadataEmit": false
   },
+  "parcelTsPluginOptions": {
+    "transpileOnly": false,
+    "angular": {
+      "watch": "aot",
+      "build": "aot"
+    }
+  },
   "files": [
     "./src/main.ts",
     "./src/app/app.module.ts",
