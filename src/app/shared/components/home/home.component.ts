@@ -6,7 +6,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   moduleId: module.id,
   selector: 'cmp-prefix1-app-home',
   templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css'],
+  styleUrls: ['home.component.scss'],
   animations: [
     trigger('intro', [
       state('void', style({

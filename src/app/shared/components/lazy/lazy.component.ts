@@ -6,7 +6,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   moduleId: module.id,
   selector: 'cmp-prefix1-app-lazy',
   templateUrl: 'lazy.component.html',
-  styleUrls: ['lazy.component.css'],
+  styleUrls: ['lazy.component.scss'],
   animations: [
     trigger('intro', [
       state('void', style({
