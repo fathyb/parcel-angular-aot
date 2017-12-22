@@ -7,7 +7,7 @@
     "contributors": [],
     "main": "./main.electron.js",
     "scripts": {
-        "clean": "rm -rf node_modules ngfactory doc build && npm cache clean",
+        "clean": "rm -rf dist .cache",
         "webdriver:update": "webdriver-manager update",
         "webdriver:start": "webdriver-manager start",
         "lint": "tslint --force \"src/app/**/*.ts\"",
@@ -18,11 +18,11 @@
         "test:watch": "karma start karma.conf.js --no-single-run --auto-watch",
         "ci": "npm run e2e && npm run test",
         "ci:watch": "npm run e2e && npm run test:watch",
-        "start": "yarn serve",
-        "postinstall": "",
-        "build": "rm -rf dist .cache &&  node_modules/parcel-bundler/bin/cli.js build src/index.html --public-url / --no-minify && cp -R src/public/assets dist/assets",
-        "copy-assets": "rm -rf dist && mkdir dist && cp -R src/public/assets dist/assets",
-        "serve": "rm -rf .cache && yarn copy-assets && node_modules/parcel-bundler/bin/cli.js src/index.html --no-hmr"
+        "copy:assets": "rm -rf dist && mkdir dist && cp -R src/public/assets dist/assets",
+        "build:dev": "parcel build src/index.html --public-url / --no-minify",
+        "build:prod": "parcel build src/index.html --public-url /",
+        "serve": "parcel src/index.html --no-hmr",
+        "start": "yarn serve"
     },
     "dependencies": {
         "@angular/animations": "^5.0.0",
