@@ -36,6 +36,9 @@
       "build": "aot"
     }
   },
+  "parcelAngularOptions": {
+    "watch": "aot"
+  },
   "files": [
     "./src/main.ts",
     "./src/app/app.module.ts",

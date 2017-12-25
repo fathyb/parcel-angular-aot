@@ -1,0 +1,14 @@
+{
+  "watch": true,
+  "bundles": {
+    "src/app/shared/components/home/home.module.ngfactory": {
+      "exports": ["HomeModuleNgFactory"]
+    },
+    "src/app/shared/components/lazy/lazy.module.ngfactory": {
+      "exports": ["LazyModuleNgFactory"]
+    },
+    "src/polyfill": {
+      "optimization": "simple"
+    }
+  }
+}
